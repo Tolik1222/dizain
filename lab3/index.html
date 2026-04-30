@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Головна сторінка портфоліо майбутнього фронтенд-розробника">
+    <meta name="author" content="Антон Смірнов">
+    <title>Головна — Портфоліо</title>
+</head>
+<body class="page">
+    <header class="page-header">
+        <h1>Смірнов Антон</h1>
+        
+        <!-- Гамбургер меню для мобільних -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav>
+            <ul>
+                <li><strong>Головна</strong></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page-sidebar">
+        <h3>Швидка навігація</h3>
+        <p><strong>Студент 539 факультету</strong></p>
+        <p>Вивчаю фронтенд-розробку та сучасні веб-технології</p>
+        
+        <h4>Мої навички:</h4>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3 / Flexbox / Grid</li>
+            <li>Git / GitHub</li>
+            <li>Responsive Design</li>
+        </ul>
+    </aside>
+
+    <main class="page-content">
+        <section>
+            <h2>Вітаю</h2>
+            <p>Я студент, який навчається на <strong>539 факультеті</strong>. Це перша лабораторна робота.</p>
+            <p>Цей сайт створений у межах <em>лабораторної роботи №3</em> для вивчення адаптивної верстки з використанням CSS Grid, Flexbox та Mobile First підходу.</p>
+            
+            <blockquote>
+                "Кращий спосіб передбачити майбутнє — створити його"
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Мої цілі</h2>
+            <ul>
+                <li>Опанувати семантичний HTML5</li>
+                <li>Вивчити сучасні CSS-технології (Grid, Flexbox, Custom Properties)</li>
+                <li>Освоїти адаптивну верстку та Mobile First підхід</li>
+                <li>Створити свій перший масштабний проєкт</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Мої проєкти</h2>
+            <p>Нижче представлені мої навчальні проєкти:</p>
+            
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>🌐 Лабораторна робота №1</h3>
+                    <p>Створення базової HTML-структури сайту-портфоліо з використанням семантичних тегів.</p>
+                    <button class="button">Детальніше</button>
+                </div>
+                
+                <div class="card">
+                    <h3>🎨 Лабораторна робота №2</h3>
+                    <p>Стилізація сайту за допомогою CSS: кольори, шрифти, псевдокласи та псевдоелементи.</p>
+                    <button class="button">Детальніше</button>
+                </div>
+                
+                <div class="card">
+                    <h3>📱 Лабораторна робота №3</h3>
+                    <p>Адаптивна верстка з CSS Grid, Flexbox, анімаціями та Mobile First підходом.</p>
+                    <button class="button button-pulse">Переглянути</button>
+                </div>
+                
+                <div class="card">
+                    <h3>🚀 Майбутні проєкти</h3>
+                    <p>Планую вивчити JavaScript, React та створити інтерактивні веб-додатки.</p>
+                    <button class="button">Скоро</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <figure>
+                <img src="images/photo.jpg" alt="Моє фото" loading="lazy">
+                <figcaption>Для перевірки працездатності фото</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Антон Смірнов. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
