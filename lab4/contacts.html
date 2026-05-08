@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Зворотний зв'язок та контактна інформація">
+    <meta name="author" content="Антон Смірнов">
+    <title>Контакти — Портфоліо</title>
+</head>
+<body class="page">
+    <header class="page-header">
+        <h1>Зв'яжіться зі мною</h1>
+        
+        <!-- Гамбургер меню для мобільних -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про мене</a></li>
+                <li><strong>Контакти</strong></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page-sidebar">
+        <h3>Контакти</h3>
+        <p><strong>Email:</strong><br>
+        <a href="mailto:anton.smirnov@example.com">anton.smirnov@example.com</a></p>
+        
+        <p><strong>Телефон:</strong><br>
+        <a href="tel:+380000000000">+38 (000) 000-00-00</a></p>
+        
+        <p><strong>GitHub:</strong><br>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/username</a></p>
+        
+        <p><strong>Соціальні мережі:</strong></p>
+        <ul>
+            <li>LinkedIn</li>
+            <li>Telegram</li>
+            <li>Instagram</li>
+        </ul>
+    </aside>
+
+    <main class="page-content">
+        <section>
+            <h2>Контактна інформація</h2>
+            <p>Ви можете написати мені на пошту або зателефонувати:</p>
+            <ul>
+                <li>Email: <a href="mailto:anton.smirnov@example.com">anton.smirnov@example.com</a></li>
+                <li>Телефон: <a href="tel:+380000000000">+38 (000) 000-00-00</a></li>
+            </ul>
+            <p>Завжди радий відповісти на ваші запитання та розглянути пропозиції щодо співпраці!</p>
+        </section>
+
+        <section>
+            <h2>Форма зворотного зв'язку</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Основні дані</legend>
+                    <div class="form-row">
+                        <p>
+                            <label for="name">Ваше ім'я:</label>
+                            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+                        </p>
+                        <p>
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </p>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Деталі звернення</legend>
+                    <p>
+                        <label for="subject">Тема:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Оберіть тему --</option>
+                            <option value="job">Пропозиція роботи</option>
+                            <option value="project">Спільний проєкт</option>
+                            <option value="question">Питання</option>
+                            <option value="other">Інше</option>
+                        </select>
+                    </p>
+                    
+                    <p>Тип звернення:</p>
+                    <div style="margin-bottom: 1rem;">
+                        <label style="display: inline; margin-right: 1rem;">
+                            <input type="radio" name="type" value="question" checked> Питання
+                        </label>
+                        <label style="display: inline;">
+                            <input type="radio" name="type" value="suggestion"> Пропозиція
+                        </label>
+                    </div>
+                    
+                    <p>
+                        <label for="message">Повідомлення:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Ваш текст тут..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="consent" required style="width: auto;">
+                        <span>Я погоджуюсь на обробку персональних даних</span>
+                    </label>
+                </p>
+
+                <button type="submit">Надіслати повідомлення</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Мультимедіа</h2>
+            <figure>
+                <video controls width="100%" style="max-width: 600px;">
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відео.
+                </video>
+                <figcaption>Коротке відео про мої захоплення</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Чому варто зі мною зв'язатися?</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>🎓 Навчаюсь</h3>
+                    <p>Постійно вдосконалюю свої навички та слідкую за новими технологіями</p>
+                </div>
+                
+                <div class="card">
+                    <h3>💡 Креативність</h3>
+                    <p>Люблю знаходити нестандартні рішення для складних завдань</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🤝 Командна робота</h3>
+                    <p>Готовий до співпраці та обміну досвідом</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Антон Смірнов. Всі права захищені.</p>
+    </footer>
+    <!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Детальна інформація про освіту та навички Антона">
+    <meta name="author" content="Антон Смірнов">
+    <title>Про мене — Портфоліо</title>
+</head>
+<body class="page">
+    <header class="page-header">
+        <h1>Про мене</h1>
+        
+        <!-- Гамбургер меню для мобільних -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><strong>Про мене</strong></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="page-sidebar">
+        <h3>Інформація</h3>
+        <dl>
+            <dt><strong>Навчальний заклад:</strong></dt>
+            <dd>Національний аерокосмічний університет «ХАІ»</dd>
+            
+            <dt><strong>Факультет:</strong></dt>
+            <dd>539 факультет</dd>
+            
+            <dt><strong>Спеціалізація:</strong></dt>
+            <dd>Веб-розробка, фронтенд</dd>
+        </dl>
+    </aside>
+
+    <main class="page-content">
+        <section>
+            <h2>Освіта та досвід</h2>
+            <p>Студент Національного аерокосмічного університету «Харківський авіаційний інститут».</p>
+            <p>Активно вивчаю сучасні веб-технології та прагну стати професійним фронтенд-розробником.</p>
+            
+            <h3>Технічні навички</h3>
+            <table>
+                <caption>Рівень володіння технологіями</caption>
+                <thead>
+                    <tr>
+                        <th>Технологія</th>
+                        <th>Рівень</th>
+                        <th>Досвід</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Середній</td>
+                        <td>3 місяці</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Середній</td>
+                        <td>3 місяці</td>
+                    </tr>
+                    <tr>
+                        <td>Git / GitHub</td>
+                        <td>Знавець</td>
+                        <td>4 роки</td>
+                    </tr>
+                    <tr>
+                        <td>Flexbox</td>
+                        <td>Початківець</td>
+                        <td>1 місяць</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Grid</td>
+                        <td>Початківець</td>
+                        <td>1 місяць</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Цікаві факти</h2>
+            <dl>
+                <dt>Хобі</dt>
+                <dd>Цікавлюся радіотехнікою, електронікою та збіркою ПК.</dd>
+                
+                <dt>Улюблені технології</dt>
+                <dd>CSS Grid, Flexbox, адаптивна верстка</dd>
+                
+                <dt>Що вивчаю зараз</dt>
+                <dd>Архітектуру MVC для майбутніх проєктів на Django</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Мої досягнення</h2>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>📚 Успішне навчання</h3>
+                    <p>Виконання всіх лабораторних робіт з веб-технологій</p>
+                </div>
+                
+                <div class="card">
+                    <h3>💻 GitHub</h3>
+                    <p>Активне використання системи контролю версій</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🎯 Мотивація</h3>
+                    <p>Прагну постійно вдосконалювати свої навички</p>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <p><strong>До речі:</strong> Я зараз активно вивчаю архітектуру MVC для майбутніх проєктів на Django та сучасні CSS-технології для створення адаптивних сайтів.</p>
+        </aside>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Антон Смірнов. Всі права захищені.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
