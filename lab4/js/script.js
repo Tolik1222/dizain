@@ -305,4 +305,6 @@ console.log("Перевірка Email:");
 console.log(`user@example.com: ${isValidEmail("user@example.com")}`);  
 console.log(`invalid-email: ${isValidEmail("invalid-email")}`);
 console.log(`@example.com: ${isValidEmail("@example.com")}`);        
-console.log(`user@.com: ${isValidEmail("user@.com")}`);            
+console.log(`user@.com: ${isValidEmail("user@.com")}`);
+
+
